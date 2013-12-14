@@ -1,0 +1,29 @@
+<h1>Listing card_pages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Link</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @card_pages.each do |card_page| %>
+      <tr>
+        <td><%= card_page.name %></td>
+        <td><%= card_page.link %></td>
+        <td><%= link_to 'Show', card_page %></td>
+        <td><%= link_to 'Edit', edit_card_page_path(card_page) %></td>
+        <td><%= link_to 'Destroy', card_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Card page', new_card_page_path %>

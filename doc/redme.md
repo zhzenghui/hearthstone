@@ -1,0 +1,1 @@
+img_link 名称 english_name 职业 稀有度 类型 法力 生命 攻击 技能 描述 

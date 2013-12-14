@@ -1,0 +1,85 @@
+<h1>Listing card_types</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Link</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @card_types.each do |card_type| %>
+      <tr>
+        <td><%= card_type.id %></td>
+
+        <td><%= card_type.name %></td>
+        <td><%= card_type.link %></td>
+        <td><%= link_to 'Show', card_type %></td>
+        <td><%= link_to 'Edit', edit_card_type_path(card_type) %></td>
+        <td><%= link_to 'Destroy', card_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<h1>Listing heros</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Link</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @heros.each do |hero| %>
+      <tr>
+        <td><%= hero.id %></td>
+
+        <td><%= hero.name %></td>
+        <td><%= hero.link %></td>
+        <td><%= link_to 'Show', hero %></td>
+        <td><%= link_to 'Edit', edit_hero_path(hero) %></td>
+        <td><%= link_to 'Destroy', hero, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h1>Listing hero_type</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Link</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hero_types.each do |herotype| %>
+      <tr>
+        <td><%= herotype.id %></td>
+
+        <td><%= herotype.name %></td>
+        <td><%= herotype.link %></td>
+        <td><%= link_to 'Show', herotype %></td>
+        <td><%= link_to 'Edit', edit_hero_type_path(herotype) %></td>
+        <td><%= link_to 'Destroy', herotype, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<%= link_to 'New Card type', new_card_type_path %>

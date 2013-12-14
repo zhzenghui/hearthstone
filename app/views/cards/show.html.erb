@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @card.name %>
+</p>
+
+<p>
+  <strong>English name:</strong>
+  <%= @card.english_name %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @card.link %>
+</p>
+
+<p>
+  <strong>Img link:</strong>
+  <%= @card.img_link %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @card.description %>
+</p>
+
+<p>
+  <strong>Profession:</strong>
+  <%= @card.profession %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @card.type %>
+</p>
+
+<p>
+  <strong>Card type:</strong>
+  <%= @card.card_type %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @card.cost %>
+</p>
+
+<p>
+  <strong>Attack:</strong>
+  <%= @card.attack %>
+</p>
+
+<p>
+  <strong>Health:</strong>
+  <%= @card.health %>
+</p>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @hero_type.name %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @hero_type.link %>
+</p>
+
+<%= link_to 'Edit', edit_hero_type_path(@hero_type) %> |
+<%= link_to 'Back', hero_types_path %>

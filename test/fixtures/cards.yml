@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  english_name: MyString
+  link: MyString
+  img_link: MyString
+  description: MyString
+  profession: MyString
+  type: 
+  card_type: MyString
+  cost: 1
+  attack: 1
+  health: 1
+
+two:
+  name: MyString
+  english_name: MyString
+  link: MyString
+  img_link: MyString
+  description: MyString
+  profession: MyString
+  type: 
+  card_type: MyString
+  cost: 1
+  attack: 1
+  health: 1
